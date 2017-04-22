@@ -1,4 +1,4 @@
-# Python Flask Hello World Sample
+# Python Flask Watsart app
 
 This application demonstrates a simple, reusable Python web application based on the [Flask microframework](http://flask.pocoo.org/).
 
