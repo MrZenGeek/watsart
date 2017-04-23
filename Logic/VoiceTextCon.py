@@ -6,7 +6,8 @@ from watson_developer_cloud import SpeechToTextV1 as SpeechToText
 import scipy.io.wavfile as wavfile
 #from recorder.recorder import Recorder
 import wave
-
+from recorder import Recorder
+from recorder.recorder import Recorder
 
 def VoicetoTextConv(audio_file_input):
      try:
@@ -32,6 +33,6 @@ def VoicetoTextConv(audio_file_input):
 
 if __name__ == '__main__':
 
-    rate, data = wavfile.read("speech.wav")
-    VoicetoTextConv(data)
-    
+    #rate, data = wavfile.read()
+    with open("speech.wav", 'rb') as audio_file:
+        VoicetoTextConv(audio_file)
